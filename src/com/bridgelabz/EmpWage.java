@@ -13,10 +13,14 @@ public class EmpWage
 		     
 		     int wagePerHour = 20;
 		     int fullDayHour =  8;
+		     int wagePerDay = 0;
 		     
-		     if(attendance == 1)
+		     if(attendance == 1) {
 		    	 System.out.println("Employee Present ..");
-		     else
+		         wagePerDay = wagePerHour*fullDayHour;
+		     }else
 		    	 System.out.println("Employee Absent ..");
+		     
+		     System.out.println("Employee Wage Per Day : "+ wagePerDay);
     }
 }
