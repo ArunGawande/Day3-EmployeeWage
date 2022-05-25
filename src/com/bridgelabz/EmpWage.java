@@ -11,6 +11,9 @@ public class EmpWage
 		     Random random = new Random();
 		     int attendance = random.nextInt(2); // 0 or 1
 		     
+		     int wagePerHour = 20;
+		     int fullDayHour =  8;
+		     
 		     if(attendance == 1)
 		    	 System.out.println("Employee Present ..");
 		     else
