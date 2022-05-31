@@ -7,22 +7,23 @@ public class EmpWage {
 		System.out.println("Welcome to Employee Wage Computation Program");
 
 		Random random = new Random();
-		int attendance = random.nextInt(3); // 0 or 1
+		int attendance = random.nextInt(3); // generate random number 0,1,2
 
 		int wagePerHour = 20;
 		int fullDayHour = 8;
 		int partTimeHours = 4;
 		int wagePerDay = 0;
 
-		if (attendance == 0)
+		switch (attendance) {
+		case 0:
 			System.out.println("Employee Absent ..");
-
-		else if (attendance == 1)
-
+			break;
+		case 1:
 			wagePerDay = partTimeHours * wagePerHour;
-
-		else
+			break;
+		default:
 			wagePerDay = fullDayHour * wagePerHour;
+		}
 
 		System.out.println("Employee wage per Day: " + wagePerDay);
 	}
